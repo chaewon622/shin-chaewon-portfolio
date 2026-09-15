@@ -98,6 +98,18 @@ h1,h2,h3,.brand,.role,.fact strong,.stat strong,#korea dd{color:var(--ink)}
 .nav a{color:var(--body)}
 .nav a:hover,.lang button.on{color:var(--accent)}
 .hero-links a:hover,.official:hover,#dance .performance-playlist:hover,#looking-ahead .looking-links a:hover{border-bottom-color:transparent}
+
+/* Keep section navigation available on small screens. */
+@media(max-width:760px){
+ header nav.wrap{height:auto;display:grid;grid-template-columns:1fr auto;gap:0;padding-top:14px}
+ header .right{display:contents}
+ header .brand{grid-column:1;grid-row:1}
+ header .lang{grid-column:2;grid-row:1;min-height:30px}
+ header .lang button{min-height:32px;min-width:30px}
+ header .nav{grid-column:1/-1;grid-row:2;display:flex;flex-wrap:wrap;align-items:center;gap:0 18px;margin-top:10px;padding:5px 0 8px;border-top:1px solid var(--line)}
+ header .nav a{display:flex;align-items:center;min-height:36px;font-size:10px;letter-spacing:.06em}
+ section[id],#korea,#looking-ahead{scroll-margin-top:150px}
+}
 </style></head><body>
 <header><nav class="wrap"><a class="brand" href="#top">Shin Chaewon</a><div class="right"><div class="nav"><a href="#about" data-k="nav.about">About</a><a href="#warsaw" data-k="nav.warsaw">Warsaw</a><a href="#dance" data-k="nav.dance">Dance</a><a href="#korea" data-k="nav.korea">Korea</a><a href="#looking-ahead" data-k="nav.looking">Let’s Work Together</a></div><div class="lang"><button class="on" data-lang="en">EN</button>/<button data-lang="pl">PL</button>/<button data-lang="ko" aria-label="한국어">KR</button></div></div></nav></header>
 <main id="top">
