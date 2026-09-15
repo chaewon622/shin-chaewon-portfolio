@@ -1,0 +1,207 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shin Chaewon | K-pop Dance Instructor</title>
+<style>
+:root{--bg:#F5F1EB;--ink:#252326;--muted:#6C6468;--line:#D4CBC4;--paper:#FAF7F2;--body:#4F4B4D;--accent:#783D4A;--max:1160px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Arial,sans-serif}a{color:inherit;text-decoration:none}img,video{display:block;width:100%}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}header{position:sticky;top:0;z-index:5;background:#F5F1EBee;border-bottom:1px solid var(--line)}nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand,.nav a,.lang{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.right,.nav,.lang{display:flex;align-items:center;gap:20px}.lang{gap:5px;border-left:1px solid var(--line);padding-left:18px}.lang button{border:0;background:none;font:inherit;font-weight:bold;color:var(--muted);cursor:pointer}.lang button.on{color:var(--ink);text-decoration:underline;text-underline-offset:4px}section{padding:90px 0;border-bottom:1px solid var(--line)}.hero{min-height:calc(100vh - 68px);display:flex;align-items:center;position:relative;background:var(--bg);background-size:cover;background-position:center 28%;overflow:hidden}.hero .wrap{padding:64px 0;position:relative;z-index:1}.hero-grid{display:block}.hero-copy{width:min(720px,62%);min-width:0}.hero-links{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px}.hero-links a{display:inline-block;padding:0 0 3px;border-bottom:1px solid rgba(17,17,17,.55);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.hero-links a:hover{border-bottom-color:transparent}h1{font-size:clamp(58px,10vw,126px);line-height:.84;letter-spacing:-.065em;margin:0;text-transform:uppercase}h2{font-size:clamp(35px,5vw,64px);line-height:.95;letter-spacing:-.045em;margin:0 0 38px;text-transform:uppercase}.role{font-size:clamp(19px,2.2vw,28px);font-weight:700;margin:30px 0 4px}.muted{color:var(--muted)}.eye{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 13px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:58px}.copy{font-size:17px}.about-layout{max-width:900px}.about-copy{padding-top:8px}.about-facts{margin-top:34px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(2,1fr);column-gap:28px}.about-facts .fact{grid-template-columns:105px 1fr}.about-after-gallery{margin-top:54px}.about-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:54px}.about-gallery figure{margin:0;overflow:hidden;background:#111;aspect-ratio:16/9}.about-gallery img,.about-gallery video{width:100%;height:100%;object-fit:cover}.facts{border-top:1px solid var(--line)}.fact{display:grid;grid-template-columns:130px 1fr;padding:15px 0;border-bottom:1px solid var(--line)}.fact span{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}.head{display:flex;justify-content:space-between;align-items:end;gap:30px}.head h2{margin:0}.meta{text-align:right;color:var(--muted);font-size:13px}.official{display:inline-block;margin-top:7px;color:var(--ink);border-bottom:1px solid var(--ink);font-size:11px;text-transform:uppercase;letter-spacing:.06em}.stats{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line);margin:38px 0 52px}.stat{padding:21px 17px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:24px}.stat span{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}.feature{display:block}.box{padding:32px;background:var(--paper);border:1px solid var(--line)}.split-block{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px;align-items:stretch}.split-copy{display:flex;flex-direction:column;justify-content:center}.split-copy h3{font-size:clamp(25px,3vw,40px);line-height:1.05;letter-spacing:-.035em;margin:0 0 22px;text-transform:uppercase}.split-copy p:last-child{font-size:16px;line-height:1.75;margin:0}.teaching-video-copy .eye{font-size:11px;line-height:1.6;letter-spacing:.14em;margin:0 0 13px}.gallery,.videos{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px;align-items:stretch}
+.carousel{position:relative;margin:0;border:1px solid var(--line);background:var(--paper);overflow:hidden;min-width:0}
+.carousel-track{display:flex;transition:transform .35s ease}
+.carousel-slide{min-width:100%}
+.carousel-slide img{width:100%;height:min(72vh,720px);object-fit:cover;background:#e8e4dc}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid rgba(255,255,255,.7);border-radius:50%;background:rgba(17,17,17,.58);color:#fff;font-size:24px;cursor:pointer;z-index:2}
+.carousel-btn.prev{left:14px}.carousel-btn.next{right:14px}
+.carousel-dots{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:flex;gap:7px;z-index:2}
+.carousel-dot{width:7px;height:7px;border:0;border-radius:50%;padding:0;background:rgba(255,255,255,.55);cursor:pointer}
+.carousel-dot.active{background:#fff}.card{margin:0;background:var(--paper);border:1px solid var(--line);overflow:hidden}.card img{aspect-ratio:4/5;object-fit:cover}.cap{padding:12px 15px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.07em}.videos .card{background:#111}.videos video{aspect-ratio:9/16;max-height:620px;object-fit:contain}.videos .cap{color:#ddd}
+.teaching-video-block{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px;align-items:stretch}
+.teaching-video-copy{display:flex;flex-direction:column;justify-content:center;padding:32px;background:var(--paper);border:1px solid var(--line)}
+.teaching-video-copy h3{font-size:clamp(25px,3vw,40px);line-height:1.05;letter-spacing:-.035em;margin:0 0 22px;text-transform:uppercase}
+.teaching-video-copy p{margin:0;font-size:16px;line-height:1.75;color:var(--ink)}
+.single-video{background:#111;border:1px solid #111}
+.single-video video{width:100%;max-height:720px;object-fit:contain;background:#111}.showcase-video{background:#111;border:1px solid #111;display:flex;align-items:center}.showcase-video video{width:100%;max-height:720px;object-fit:contain;background:#111}.showcase-copy{display:flex;flex-direction:column;justify-content:center}.showcase-copy h3{font-size:clamp(25px,3vw,40px);line-height:1.05;letter-spacing:-.035em;margin:0 0 22px;text-transform:uppercase}.showcase-copy p:last-child{font-size:16px;line-height:1.75;margin:0;white-space:pre-line}.placeholder{color:var(--muted)}footer{padding:28px 0;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:760px){.wrap{width:calc(100% - 28px)}.hero-grid{display:block}.hero{min-height:78vh;background-position:58% center;background:var(--bg)}.hero .wrap{padding:52px 0}.hero-copy{width:78%}.hero-links{margin-top:24px;gap:20px}.hero-links a{padding:0 0 2px}.nav{display:none}.lang{border:0;padding:0}.grid2,.feature,.gallery,.videos,.split-block{grid-template-columns:1fr}.about-gallery{grid-template-columns:1fr;gap:12px;margin-top:38px}.about-facts{grid-template-columns:1fr}.head{display:block}.meta{text-align:left;margin:15px 0}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.feature img{min-height:0;aspect-ratio:4/5}.teaching-video-block{grid-template-columns:1fr}.teaching-video-copy{margin-top:8px}section{padding:65px 0}}
+
+#dance .performance-intro{max-width:900px;margin:0}
+#dance .performance-heading{font-size:18px;line-height:1.5;letter-spacing:.12em;margin:44px 0 18px;font-weight:700}
+#dance .performance-grid{display:grid;gap:18px;align-items:start}
+#dance .performance-kpop{grid-template-columns:repeat(3,minmax(0,1fr))}
+#dance .performance-other{grid-template-columns:repeat(3,minmax(0,1fr))}
+#dance .performance-film{margin:0;min-width:0;background:#111;border:1px solid var(--line);overflow:hidden}
+#dance video{width:100%;aspect-ratio:9/16;object-fit:contain;background:#111}
+#dance .performance-playlist{display:inline-block;max-width:100%;margin-top:24px;padding-bottom:4px;border-bottom:1px solid var(--ink);font-size:16px;font-weight:700;letter-spacing:.09em}
+#dance .performance-playlist:hover{border-bottom-color:transparent}
+@media(max-width:760px){#dance .performance-grid{grid-template-columns:1fr;gap:18px}#dance .performance-heading{margin-top:34px}}
+#dance .performance-crew{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;font-weight:700}
+#dance .performance-crew:hover{text-decoration:none}
+
+html[lang="ko"] body{font-family:Arial,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;word-break:keep-all;overflow-wrap:break-word}
+html[lang="ko"] h2{line-height:1.15;letter-spacing:-.04em}
+html[lang="ko"] h3{line-height:1.25}
+html[lang="ko"] .eye,html[lang="ko"] .stat span,html[lang="ko"] #dance .performance-heading,html[lang="ko"] #dance .performance-playlist{letter-spacing:.02em}
+
+#korea h2{margin-bottom:22px}
+#korea .eye{margin-bottom:30px}
+#korea .korea-overview{display:grid;grid-template-columns:minmax(0,2fr) minmax(230px,1fr);gap:64px;align-items:start}
+#korea .korea-intro{margin:0;max-width:730px}
+#korea .korea-details{margin:0;border-top:1px solid var(--line)}
+#korea .korea-details>div{padding:15px 0;border-bottom:1px solid var(--line)}
+#korea dt{font-size:11px;letter-spacing:.09em;color:var(--muted);margin-bottom:5px}
+#korea dd{margin:0;font-size:19px;font-weight:700}
+#korea .korea-feedback-title{font-size:18px;letter-spacing:.1em;line-height:1.5;margin:62px 0 22px}
+#korea .korea-testimonials{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:46px;border-top:1px solid var(--line)}
+#korea .korea-testimonials figure{margin:0;padding:30px 0 0}
+#korea blockquote{margin:0}
+#korea blockquote p{font-size:clamp(19px,1.8vw,23px);line-height:1.65;letter-spacing:-.015em;margin:0}
+#korea figcaption{margin-top:24px;color:var(--muted);font-size:10px;letter-spacing:.09em}
+html[lang="ko"] #korea dt,html[lang="ko"] #korea figcaption,html[lang="ko"] #korea .korea-feedback-title{letter-spacing:.02em}
+@media(max-width:760px){#korea .korea-overview{grid-template-columns:1fr;gap:28px}#korea .korea-details{display:grid;grid-template-columns:1fr 1fr;gap:20px}#korea .korea-feedback-title{margin-top:42px}#korea .korea-testimonials{grid-template-columns:1fr;gap:28px}#korea .korea-testimonials figure+figure{border-top:1px solid var(--line)}#korea .korea-testimonials figure{padding-top:24px}}
+#korea{scroll-margin-top:68px}
+#korea .feedback-original{margin-top:16px}
+#korea .feedback-original summary{width:fit-content;max-width:100%;cursor:pointer;font-size:11px;font-weight:700;letter-spacing:.06em;text-underline-offset:4px;text-decoration:underline}
+#korea .feedback-original summary:hover{text-decoration:none}
+#korea .feedback-original summary:focus-visible{outline:2px solid var(--ink);outline-offset:5px}
+#korea .feedback-original img{width:100%;height:auto;margin-top:20px}
+
+#looking-ahead{scroll-margin-top:68px}
+#looking-ahead .looking-copy{max-width:900px;line-height:1.8}
+#looking-ahead .looking-copy p{margin:0 0 24px}
+#looking-ahead .looking-copy p:last-child{margin-bottom:0}
+#looking-ahead .looking-links{display:flex;flex-wrap:wrap;gap:30px;margin-top:38px}
+#looking-ahead .looking-links a{font-size:16px;font-weight:700;letter-spacing:.09em;border-bottom:1px solid var(--ink);padding-bottom:4px}
+#looking-ahead .looking-links a:hover{border-bottom-color:transparent}
+html[lang="ko"] #looking-ahead .looking-links a{letter-spacing:.02em}
+@media(max-width:760px){#looking-ahead .looking-links{gap:24px;margin-top:30px}}
+
+body{color:var(--body)}
+h1,h2,h3,.brand,.role,.fact strong,.stat strong,#korea dd{color:var(--ink)}
+.copy,.split-copy p:not(.eye),.teaching-video-copy p:not(.eye),.showcase-copy p:not(.eye){color:var(--body);line-height:1.85}
+.copy p+p,.split-copy p+p{margin-top:22px}
+.split-copy p:last-child,.showcase-copy p:last-child{line-height:1.85}
+.teaching-video-copy p[data-k="style.p2"]{margin-top:22px!important}
+#looking-ahead .looking-copy{line-height:1.85}
+#looking-ahead .looking-copy p{margin-bottom:28px}
+#korea blockquote p{color:var(--body);line-height:1.75}
+.hero-links a,.official,#dance .performance-playlist,#dance .performance-crew,#looking-ahead .looking-links a,#korea .feedback-original summary{color:var(--accent);border-bottom-color:var(--accent)}
+.nav a{color:var(--body)}
+.nav a:hover,.lang button.on{color:var(--accent)}
+.hero-links a:hover,.official:hover,#dance .performance-playlist:hover,#looking-ahead .looking-links a:hover{border-bottom-color:transparent}
+</style></head><body>
+<header><nav class="wrap"><a class="brand" href="#top">Shin Chaewon</a><div class="right"><div class="nav"><a href="#about" data-k="nav.about">About</a><a href="#warsaw" data-k="nav.warsaw">Warsaw</a><a href="#dance" data-k="nav.dance">Dance</a><a href="#korea" data-k="nav.korea">Korea</a><a href="#looking-ahead" data-k="nav.looking">Let’s Work Together</a></div><div class="lang"><button class="on" data-lang="en">EN</button>/<button data-lang="pl">PL</button>/<button data-lang="ko" aria-label="한국어">KR</button></div></div></nav></header>
+<main id="top">
+<section class="hero"><div class="wrap"><div class="hero-grid"><div class="hero-copy"><h1>Shin<br>Chaewon</h1><p class="role" data-k="hero.role">K-POP DANCE INSTRUCTOR</p><div class="muted" data-k="hero.meta">Based in South Korea · Available to relocate</div><div class="hero-links"><a href="mailto:helloguy12333@gmail.com" data-k="contact.email">EMAIL ↗</a><a href="https://www.instagram.com/she_is_a_pandora_?" target="_blank" rel="noopener" data-k="contact.instagram">INSTAGRAM ↗</a></div></div></div></div></section>
+<section id="about"><div class="wrap"><h2 data-k="about.title">About</h2><div class="about-gallery" aria-label="Selected dance moments"><figure><video autoplay muted loop playsinline preload="auto" aria-label="Selected K-pop dance performance"><source src="assets/about-1.mp4" type="video/mp4"></video></figure><figure><video autoplay muted loop playsinline preload="auto" aria-label="Selected K-pop dance performance"><source src="assets/about-2.mp4" type="video/mp4"></video></figure><figure><video autoplay muted loop playsinline preload="auto" aria-label="Selected K-pop dance performance"><source src="assets/about-3.mp4" type="video/mp4"></video></figure><figure><video autoplay muted loop playsinline preload="auto" aria-label="Selected K-pop dance performance"><source src="assets/about-4.mp4" type="video/mp4"></video></figure></div><div class="about-layout about-after-gallery"><div class="about-copy"><div class="copy"><p data-k="about.p1">I’m a Korean K-pop dance instructor with over 10 years of dance experience and more than 5 years of experience as a member of a K-pop cover dance crew.</p><p data-k="about.p2">My experience spans both performance and teaching, from K-pop cover performances and video projects in South Korea to teaching K-pop dance in Warsaw. In 2026, I spent two months in Warsaw teaching K-pop classes in English and preparing students for their final performance.</p><p data-k="about.p3">Through these experiences, I have developed a strong interest in teaching K-pop to students from different backgrounds and hope to continue my work as a K-pop dance instructor in Warsaw.</p></div><div class="about-facts"><div class="fact"><span data-k="facts.dance">Dance</span><strong data-k="facts.dance.years">10+ years</strong></div><div class="fact"><span data-k="facts.crew">K-pop Crew</span><strong data-k="facts.crew.years">5+ years</strong></div><div class="fact"><span data-k="facts.languages">Languages</span><strong data-k="facts.languages.value">Korean · English</strong></div><div class="fact"><span data-k="facts.location">Based in</span><strong data-k="hero.meta">Based in South Korea · Available to relocate</strong></div></div></div></div></div></section>
+<section id="warsaw"><div class="wrap"><div class="head"><h2 data-k="warsaw.title">Teaching in Warsaw</h2><div class="meta"><strong data-k="warsaw.org">Korean Cultural Center in Poland · Warsaw</strong><br><span data-k="warsaw.dates">July — August 2026</span><br><a class="official" href="https://www.instagram.com/p/DaLG_SVCidf/" target="_blank" rel="noopener" data-k="warsaw.link">↗ View Official Program Announcement</a></div></div>
+<div class="stats"><div class="stat"><strong data-k="stats.months">2 MONTHS</strong><span data-k="warsaw.dates">July — August 2026</span></div><div class="stat"><strong data-k="stats.days">5 DAYS / WEEK</strong><span data-k="stats.weekdays">Monday — Friday</span></div><div class="stat"><strong data-k="stats.groups">2 AGE GROUPS</strong><span data-k="warsaw.ages">Under 14 · Ages 14+</span></div><div class="stat"><strong data-k="stats.minutes">90 MIN</strong><span data-k="warsaw.regular">Regular Class</span></div></div>
+<div class="stats"><div class="stat"><strong>4</strong><span data-k="warsaw.full">Full choreographies led</span></div><div class="stat"><strong>3</strong><span data-k="warsaw.chal">K-pop challenge classes</span></div><div class="stat"><strong>14</strong><span data-k="warsaw.total">Songs covered by the program</span></div><div class="stat"><strong data-k="stats.language">ENGLISH</strong><span data-k="warsaw.lang">Class language</span></div></div>
+<div class="split-block">
+<div class="carousel" aria-label="Teaching photos">
+<div class="carousel-track">
+<div class="carousel-slide"><img src="assets/class-main.jpg" alt="K-pop dance class in Warsaw"></div>
+<div class="carousel-slide"><img src="assets/class-2.jpg" alt="K-pop dance class in Warsaw"></div>
+<div class="carousel-slide"><img src="assets/class-3.jpg" alt="K-pop dance class in Warsaw"></div>
+<div class="carousel-slide"><img src="assets/class-4.jpg" alt="K-pop dance class in Warsaw"></div>
+</div>
+<button class="carousel-btn prev" type="button" aria-label="Previous photo">‹</button>
+<button class="carousel-btn next" type="button" aria-label="Next photo">›</button>
+<div class="carousel-dots" aria-label="Photo navigation">
+<button class="carousel-dot active" type="button" aria-label="Photo 1"></button>
+<button class="carousel-dot" type="button" aria-label="Photo 2"></button>
+<button class="carousel-dot" type="button" aria-label="Photo 3"></button>
+<button class="carousel-dot" type="button" aria-label="Photo 4"></button>
+</div>
+</div>
+<div class="box split-copy"><p class="eye" data-k="warsaw.over">Program Overview</p><h3 data-k="warsaw.over.title">K-pop classes in Warsaw</h3><p data-k="warsaw.p1">From July to August 2026, I worked as a K-pop dance instructor at the Korean Cultural Center in Poland in Warsaw, participating in classes five days a week, Monday through Friday.</p><p data-k="warsaw.p2">Working alongside another instructor, we taught two age groups — under 14 and ages 14+ — and alternated responsibility for each class on a weekly basis. I led 90-minute classes for my assigned group and supported the other class with individual guidance, music tempo adjustment, and photo and video documentation.</p><p data-k="warsaw.p3">Throughout the two-month program, we covered 14 K-pop songs in total. I was responsible for teaching four full choreographies, as well as three short-form K-pop challenge choreographies through one-day classes.</p></div>
+</div>
+<div class="teaching-video-block">
+<div class="teaching-video-copy"><p class="eye" data-k="style.eye">TEACHING STYLE</p><h3 data-k="style.title">DETAILS MAKE THE DIFFERENCE</h3><p data-k="style.p1">I focus on helping students understand the choreography clearly, not simply memorize the movements. I break down each section using precise counts and timing, while paying close attention to details such as head direction, gestures, and facial expressions.</p><p data-k="style.p2" style="margin-top:16px">When students struggle with a particular movement, I identify what is causing the difficulty and explain the basic movement or technique step by step. As a native Korean speaker, I can also explain Korean lyrics and help students understand how the meaning of the lyrics connects to the choreography and performance.</p></div>
+<div class="single-video"><video controls playsinline preload="metadata" src="assets/teaching-video-web.mp4"></video></div>
+</div>
+<div class="gallery"><div class="showcase-video"><video controls playsinline preload="metadata" src="assets/final-showcase.mp4"></video></div><div class="box showcase-copy"><p class="eye" data-k="show.eye">FINAL SHOWCASE</p><h3 data-k="show.title">From class to final stage</h3><p data-k="show.body">For the final showcase, I guided the under-14 group through choreography, part distribution, stage formations, and performance gestures. With the 14+ group, I also performed alongside the students as part of the same team.<br><br>For the full-group stage featuring all students and instructors, I planned and taught the overall formations, stage movements, and individual gestures, helping bring the entire performance together from preparation to the final stage.</p></div></div>
+</div></section>
+
+<section id="dance"><div class="wrap">
+<h2 data-k="dance.title">Dance &amp; Performance</h2>
+<p class="performance-intro copy"><span data-k="dance.intro.lead">As a member of </span><a class="performance-crew" href="https://www.instagram.com/ssu.d_crew__/" target="_blank" rel="noopener">SSU.D CREW</a><span data-k="dance.intro.tail">, a K-pop cover dance crew in South Korea, I have worked on over 30 K-pop cover videos, performing choreographies across different artists, styles, and concepts. Alongside these video projects, I have also taken part in a variety of live performances, gaining experience both in front of the camera and on stage.</span></p>
+<a class="performance-playlist" href="https://youtube.com/playlist?list=PLSwgSsYOMBrvNpEDxehYZNNlWplFCDFTB" target="_blank" rel="noopener" data-k="dance.playlist">VIEW FULL K-POP COVER PLAYLIST ↗</a>
+<h3 class="performance-heading" data-k="dance.kpop">K-POP PERFORMANCE</h3>
+<div class="performance-grid performance-kpop">
+<figure class="performance-film"><video controls playsinline preload="metadata" poster="assets/dance-poppop.jpg" aria-label="K-pop — 팝팝"><source src="assets/dance-poppop.mp4" type="video/mp4"></video></figure>
+<figure class="performance-film"><video controls playsinline preload="metadata" poster="assets/dance-soom.jpg" aria-label="K-pop — 숨"><source src="assets/dance-soom.mp4" type="video/mp4"></video></figure>
+<figure class="performance-film"><video controls playsinline preload="metadata" poster="assets/dance-rude.jpg" aria-label="K-pop — 루드"><source src="assets/dance-rude.mp4" type="video/mp4"></video></figure>
+</div>
+<h3 class="performance-heading" data-k="dance.other">OTHER DANCE STYLES</h3>
+<div class="performance-grid performance-other">
+<figure class="performance-film"><video controls playsinline preload="metadata" poster="assets/dance-other-2.jpg" aria-label="Dance — 01"><source src="assets/dance-other-2.mp4" type="video/mp4"></video></figure>
+<figure class="performance-film"><video controls playsinline preload="metadata" poster="assets/dance-other-1.jpg" aria-label="Dance — 02"><source src="assets/dance-other-1.mp4" type="video/mp4"></video></figure>
+</div>
+</div></section>
+<section id="korea" aria-labelledby="korea-title"><div class="wrap">
+<h2 id="korea-title" data-k="korea.title">CLASSES IN KOREA</h2>
+<p class="eye" data-k="korea.eyebrow">PRIVATE &amp; SMALL-GROUP LESSONS</p>
+<div class="korea-overview">
+<p class="copy korea-intro" data-k="korea.intro">Before teaching in Warsaw, I taught beginner K-pop choreography through private and small-group lessons in South Korea. These smaller classes allowed me to adjust the pace of each lesson and provide more detailed, individual guidance.</p>
+<dl class="korea-details">
+<div><dt data-k="korea.format">CLASS FORMAT</dt><dd>1:1 · 2:1 · 4:1</dd></div>
+<div><dt data-k="korea.level">LEVEL</dt><dd data-k="korea.beginner">Beginner</dd></div>
+</dl>
+</div>
+<h3 class="korea-feedback-title" data-k="korea.feedback">STUDENT FEEDBACK</h3>
+<div class="korea-testimonials">
+<figure><blockquote><p data-k="korea.quote1">“It was my first time learning dance, so I was nervous about signing up, but I felt a real sense of accomplishment as I learned each movement. The lessons were always friendly and enjoyable, and I’d love to try a more challenging choreography next time.”</p></blockquote><figcaption data-k="korea.student">BEGINNER STUDENT · SOUTH KOREA</figcaption><details class="feedback-original"><summary data-k="korea.original">VIEW ORIGINAL FEEDBACK</summary><img src="assets/student-feedback-1.png" alt="Original Korean student feedback 1" loading="lazy"></details></figure>
+<figure><blockquote><p data-k="korea.quote2">“Thank you for patiently teaching me each movement step by step, even when I struggled with the choreography.”</p></blockquote><figcaption data-k="korea.student">BEGINNER STUDENT · SOUTH KOREA</figcaption><details class="feedback-original"><summary data-k="korea.original">VIEW ORIGINAL FEEDBACK</summary><img src="assets/student-feedback-2.png" alt="Original Korean student feedback 2" loading="lazy"></details></figure>
+</div>
+</div></section>
+<section id="looking-ahead" aria-labelledby="looking-title"><div class="wrap">
+<h2 id="looking-title" data-k="looking.title">LET’S WORK TOGETHER</h2>
+<div class="looking-copy copy"><p data-k="looking.p1">During my two months teaching in Warsaw, I was deeply moved by my students’ enthusiasm for K-pop. As a Korean dance instructor, it meant a lot to see something from my own country bring so much joy to people so far from home. I would love to return to Warsaw, feel that same passion and energy in the classroom again, and share both K-pop and the Korean culture I grew up with, while continuing to learn about the people and culture around me.</p><p data-k="looking.p2">I would be happy to discuss opportunities to join your teaching team. Please feel free to reach out by email or Instagram DM—I’ll be glad to hear from you and will respond as soon as possible.</p></div>
+<div class="looking-links"><a href="mailto:helloguy12333@gmail.com" data-k="contact.email">EMAIL ↗</a><a href="https://www.instagram.com/she_is_a_pandora_?" target="_blank" rel="noopener" data-k="contact.instagram">INSTAGRAM ↗</a></div>
+</div></section>
+</main><footer><div class="wrap" data-k="footer">© 2026 Shin Chaewon · K-pop Dance Instructor</div></footer>
+<script>
+const pl={"nav.about":"O mnie","nav.warsaw":"Warszawa","nav.style":"Styl nauczania","nav.dance":"Taniec","hero.role":"INSTRUKTORKA TAŃCA K-POP","hero.meta":"Korea Południowa · Gotowa do relokacji","about.eye":"01 · Profil","about.title":"O mnie","about.p1":"Jestem koreańską instruktorką tańca K-pop z ponad 10-letnim doświadczeniem tanecznym oraz ponad 5-letnim doświadczeniem jako członkini grupy K-pop cover dance.","about.p2":"Moje doświadczenie obejmuje zarówno występy, jak i nauczanie — od występów K-pop cover dance i projektów wideo w Korei Południowej po prowadzenie zajęć K-pop w Warszawie. W 2026 roku spędziłam dwa miesiące w Warszawie, prowadząc zajęcia K-pop w języku angielskim oraz przygotowując uczestników do finałowego występu.","about.p3":"Dzięki tym doświadczeniom rozwinęłam szczególne zainteresowanie nauczaniem K-popu osób z różnych środowisk i chciałabym kontynuować pracę jako instruktorka tańca K-pop w Warszawie.","warsaw.eye":"02 · Doświadczenie","warsaw.title":"Nauczanie w Warszawie","warsaw.org":"Centrum Kultury Koreańskiej w Polsce · Warszawa","warsaw.link":"↗ Zobacz oficjalne ogłoszenie programu","warsaw.ages":"Poniżej 14 lat · 14+","warsaw.regular":"Zajęcia regularne","warsaw.over":"O programie","warsaw.over.title":"Zajęcia K-pop w Warszawie","warsaw.p1":"Od lipca do sierpnia 2026 roku pracowałam jako instruktorka tańca K-pop w Centrum Kultury Koreańskiej w Polsce w Warszawie, uczestnicząc w zajęciach pięć dni w tygodniu, od poniedziałku do piątku.","warsaw.p2":"Wspólnie z drugą instruktorką prowadziłyśmy zajęcia dla dwóch grup wiekowych — poniżej 14 lat oraz 14+ — zmieniając co tydzień grupę, za którą odpowiadałyśmy. Prowadziłam 90-minutowe zajęcia dla swojej grupy, a podczas zajęć drugiej grupy wspierałam uczestników indywidualnie, dostosowywałam tempo muzyki oraz zajmowałam się dokumentacją fotograficzną i wideo.","warsaw.p3":"W ciągu dwumiesięcznego programu wspólnie pracowałyśmy nad 14 utworami K-pop. Odpowiadałam za nauczanie czterech pełnych choreografii oraz trzech krótkich choreografii do wyzwań K-pop podczas zajęć jednodniowych.","warsaw.full":"Pełne choreografie prowadzone przeze mnie","warsaw.chal":"Zajęcia K-pop challenge","warsaw.total":"Utwory w całym programie","warsaw.lang":"Język zajęć","cap.class":"Regularne zajęcia · Warszawa","cap.detail":"Choreografia i detale wykonania","cap.v1":"Nagranie z zajęć · Instruktaż","cap.v2":"Nagranie z zajęć · Fragmenty lekcji","cap.show":"Finałowy pokaz · Warszawa","show.eye":"FINAŁOWY WYSTĘP","show.title":"Od zajęć do finałowej sceny","show.body":"Podczas finałowego występu prowadziłam grupę poniżej 14 lat, ucząc choreografii, przydzielając partie, układając formacje i pracując nad gestami scenicznymi. Z grupą 14+ wystąpiłam również na scenie jako część tego samego zespołu.\n\nNa wspólny występ wszystkich uczestników i instruktorek zaplanowałam i nauczyłam całą grupę formacji, przejść scenicznych oraz indywidualnych gestów, pomagając połączyć wszystkie elementy w spójny finałowy występ.","style.eye":"STYL NAUCZANIA","style.title":"DIABEŁ TKWI W SZCZEGÓŁACH","style.p1":"Skupiam się na tym, aby uczestnicy dobrze rozumieli choreografię, a nie tylko zapamiętywali ruchy. Rozkładam każdą część na dokładne liczenie i timing, zwracając szczególną uwagę na detale, takie jak kierunek głowy, gesty i mimika.","style.p2":"Kiedy uczestnik ma trudność z konkretnym ruchem, staram się znaleźć jej przyczynę i krok po kroku wyjaśnić podstawowy ruch lub technikę. Jako native speaker języka koreańskiego mogę również wyjaśniać teksty piosenek i pomagać uczestnikom zrozumieć, jak ich znaczenie łączy się z choreografią i sposobem wykonania.","video.title":"NAGRANIE Z ZAJĘĆ","video.desc":"Fragment moich zajęć tańca K-pop w Warszawie.","next.style":"Filozofia i metodyka nauczania zostaną dodane w kolejnej aktualizacji.","dance.title":"Taniec i występy","next.dance":"Tutaj zostaną dodane doświadczenie w grupie K-pop cover dance, występy oraz wybrane materiały taneczne."};
+Object.assign(pl,{"dance.intro": "Jako członkini grupy K-pop cover dance w Korei Południowej brałam udział w wielu nagraniach coverów K-pop, wykonując choreografie różnych artystów, w różnych stylach i koncepcjach. Oprócz projektów wideo występowałam także na scenie, zdobywając doświadczenie zarówno przed kamerą, jak i przed publicznością.", "dance.kpop": "WYSTĘPY K-POP", "dance.other": "INNE STYLE TAŃCA", "dance.playlist": "ZOBACZ PEŁNĄ PLAYLISTĘ COVERÓW K-POP ↗"});
+Object.assign(pl,{"dance.intro.lead": "Jako członkini ", "dance.intro.tail": ", grupy K-pop cover dance z Korei Południowej, wzięłam udział w ponad 30 nagraniach coverów K-pop, wykonując choreografie różnych artystów, w różnych stylach i koncepcjach. Oprócz projektów wideo brałam również udział w różnorodnych występach na żywo, zdobywając doświadczenie zarówno przed kamerą, jak i na scenie."});
+const ko={"nav.about": "소개", "nav.warsaw": "바르샤바", "nav.dance": "퍼포먼스", "hero.role": "K-POP 댄스 강사", "hero.meta": "한국 거주 · 해외 이주 가능", "contact.email": "이메일 ↗", "contact.instagram": "인스타그램 ↗", "about.title": "소개", "about.p1": "저는 10년 이상의 춤 경험과 5년 이상의 K-pop 커버댄스 크루 활동 경력을 가진 한국인 K-pop 댄스 강사입니다.", "about.p2": "한국에서의 K-pop 커버 공연과 영상 작업부터 바르샤바에서의 K-pop 수업까지, 퍼포먼스와 교육 양쪽에서 경험을 쌓아왔습니다. 2026년에는 두 달간 바르샤바에 머물며 영어로 K-pop 수업을 진행하고 수강생들의 최종 공연을 준비했습니다.", "about.p3": "이러한 경험을 통해 다양한 배경의 수강생들에게 K-pop을 가르치는 일에 큰 관심을 갖게 되었으며, 앞으로도 바르샤바에서 K-pop 댄스 강사로 활동을 이어가고자 합니다.", "facts.dance": "댄스 경력", "facts.dance.years": "10년 이상", "facts.crew": "K-pop 크루 활동", "facts.crew.years": "5년 이상", "facts.languages": "사용 언어", "facts.languages.value": "한국어 · 영어", "facts.location": "거주지", "warsaw.title": "바르샤바에서의 수업", "warsaw.org": "주폴란드 한국문화원 · 바르샤바", "warsaw.dates": "2026년 7월 — 8월", "warsaw.link": "↗ 공식 프로그램 안내 보기", "stats.months": "2개월", "stats.days": "주 5일", "stats.weekdays": "월요일 — 금요일", "stats.groups": "2개 연령 그룹", "stats.minutes": "90분", "stats.language": "영어", "warsaw.ages": "14세 미만 · 14세 이상", "warsaw.regular": "정규 수업", "warsaw.full": "직접 지도한 전체 안무", "warsaw.chal": "K-pop 챌린지 수업", "warsaw.total": "프로그램에서 다룬 곡", "warsaw.lang": "수업 언어", "warsaw.over": "프로그램 개요", "warsaw.over.title": "바르샤바 K-pop 수업", "warsaw.p1": "2026년 7월부터 8월까지 바르샤바에 위치한 주폴란드 한국문화원에서 K-pop 댄스 강사로 활동하며, 월요일부터 금요일까지 주 5일 수업에 참여했습니다.", "warsaw.p2": "다른 강사 한 명과 함께 14세 미만과 14세 이상 두 그룹을 지도했으며, 매주 담당 그룹을 교대했습니다. 담당 그룹에서는 90분 수업을 진행하고, 다른 그룹의 수업에서는 개별 지도, 음악 속도 조절, 사진 및 영상 기록을 맡았습니다.", "warsaw.p3": "두 달간의 프로그램에서 총 14곡의 K-pop 안무를 다뤘습니다. 저는 그중 4곡의 전체 안무를 지도했으며, 원데이 클래스에서는 3곡의 짧은 K-pop 챌린지 안무를 가르쳤습니다.", "style.eye": "수업 방식", "style.title": "디테일이 만드는 차이", "style.p1": "단순히 동작을 외우는 것을 넘어, 수강생이 안무를 명확하게 이해하도록 돕는 데 집중합니다. 정확한 카운트와 타이밍을 바탕으로 안무를 구간별로 나누어 설명하며, 고개 방향, 제스처, 표정과 같은 세부 요소까지 세심하게 지도합니다.", "style.p2": "수강생이 특정 동작을 어려워할 때는 원인을 파악하고, 해당 동작의 기본 움직임이나 기법을 단계별로 설명합니다. 또한 한국어 원어민으로서 노랫말의 의미를 풀어주고, 가사가 안무와 표현에 어떻게 연결되는지 이해하도록 돕습니다.", "show.eye": "최종 공연", "show.title": "수업에서 무대까지", "show.body": "최종 공연에서는 14세 미만 그룹의 안무, 파트 분배, 무대 대형과 제스처를 지도했습니다. 14세 이상 그룹에서는 수강생들과 같은 팀의 일원으로 무대에 함께 올랐습니다.\n\n모든 수강생과 강사가 함께하는 단체 무대에서는 전체 대형, 무대 동선, 개별 제스처를 기획하고 지도하며, 준비 과정부터 최종 무대까지 하나의 공연으로 완성될 수 있도록 이끌었습니다.", "dance.title": "댄스 & 퍼포먼스", "dance.intro.lead": "한국의 K-pop 커버댄스 크루 ", "dance.intro.tail": "의 멤버로 활동하며 30개 이상의 K-pop 커버 영상에 참여하고, 다양한 아티스트와 스타일, 콘셉트의 안무를 소화했습니다. 영상 작업과 더불어 여러 공연과 무대에도 참여하며, 카메라 앞과 무대 양쪽에서 퍼포먼스 경험을 쌓았습니다.", "dance.kpop": "K-POP 퍼포먼스", "dance.other": "기타 댄스 스타일", "dance.playlist": "전체 K-POP 커버 재생목록 보기 ↗", "footer": "© 2026 신채원 · K-pop 댄스 강사"};
+Object.assign(ko,{"korea.title": "한국에서의 수업", "korea.eyebrow": "개인 및 소규모 레슨", "korea.intro": "바르샤바에서 수업하기 전, 한국에서 개인 및 소규모 레슨을 통해 초보자에게 K-pop 안무를 가르쳤습니다. 소규모 수업에서는 수강생에 맞춰 수업 속도를 조절하고, 더 세밀한 개별 지도를 제공할 수 있었습니다.", "korea.format": "수업 형태", "korea.level": "수강 수준", "korea.beginner": "초급", "korea.feedback": "수강생 후기", "korea.student": "초급 수강생 · 대한민국", "korea.quote1": "“춤을 배우는 게 처음이라 수강 신청을 할 때 긴장했는데, 동작을 하나씩 배울 때마다 성취감을 느꼈어요. 수업은 늘 편안하고 즐거웠고, 다음에는 조금 더 어려운 안무에도 도전해 보고 싶어요.”", "korea.quote2": "“안무가 잘 안 될 때도 동작 하나하나 차근차근, 인내심 있게 가르쳐 주셔서 감사합니다.”"});
+Object.assign(pl,{"korea.title": "ZAJĘCIA W KOREI", "korea.eyebrow": "LEKCJE INDYWIDUALNE I W MAŁYCH GRUPACH", "korea.intro": "Przed rozpoczęciem nauczania w Warszawie prowadziłam w Korei Południowej indywidualne i małogrupowe lekcje choreografii K-pop dla początkujących. Mniejsze grupy pozwalały mi dostosowywać tempo każdej lekcji i udzielać bardziej szczegółowych, indywidualnych wskazówek.", "korea.format": "FORMA ZAJĘĆ", "korea.level": "POZIOM", "korea.beginner": "Początkujący", "korea.feedback": "OPINIE OSÓB UCZESTNICZĄCYCH W ZAJĘCIACH", "korea.student": "OSOBA POCZĄTKUJĄCA · KOREA POŁUDNIOWA", "korea.quote1": "„Były to moje pierwsze lekcje tańca, więc zapisanie się na nie wiązało się ze stresem, ale opanowanie każdego kolejnego ruchu dawało mi prawdziwą satysfakcję. Zajęcia zawsze przebiegały w przyjaznej i przyjemnej atmosferze. Następnym razem chętnie spróbuję trudniejszej choreografii.”", "korea.quote2": "„Dziękuję za cierpliwe uczenie mnie każdego ruchu krok po kroku, nawet gdy choreografia sprawiała mi trudność.”"});
+Object.assign(pl,{"nav.korea":"Korea"});
+Object.assign(ko,{"nav.korea":"한국 수업"});
+Object.assign(pl,{"korea.original":"ZOBACZ ORYGINALNĄ OPINIĘ"});
+Object.assign(ko,{"korea.original":"원본 후기 보기"});
+Object.assign(ko,{"nav.looking": "함께해요", "looking.title": "함께해요", "looking.p1": "바르샤바에서 두 달간 수업하며 수강생들의 K-pop에 대한 열정에 깊이 감동했습니다. 한국인 댄스 강사로서, 고향에서 멀리 떨어진 곳에서 한국의 K-pop이 사람들에게 큰 기쁨을 주는 모습을 보는 것은 제게 특별한 의미가 있었습니다. 다시 바르샤바로 돌아가 수업에서 그 뜨거운 열정과 에너지를 느끼고 싶습니다. K-pop과 제가 자라며 경험한 한국 문화를 나누는 동시에, 저 역시 현지 사람들과 문화를 계속 알아가고 싶습니다.", "looking.p2": "여러분의 강사진으로 함께할 기회에 대해 이야기할 수 있다면 기쁘겠습니다. 이메일이나 인스타그램 DM으로 편하게 연락해 주세요. 반가운 마음으로 최대한 빠르게 답변드리겠습니다."});
+Object.assign(pl,{"nav.looking": "Pracujmy razem", "looking.title": "PRACUJMY RAZEM", "looking.p1": "Podczas dwóch miesięcy nauczania w Warszawie głęboko poruszył mnie entuzjazm moich uczniów wobec K-popu. Jako koreańska instruktorka tańca czułam, jak wiele znaczy dla mnie to, że coś z mojego kraju przynosi tyle radości ludziom tak daleko od mojego domu. Chciałabym wrócić do Warszawy, ponownie poczuć tę samą pasję i energię na zajęciach oraz dzielić się zarówno K-popem, jak i kulturą koreańską, w której dorastałam, a jednocześnie dalej poznawać ludzi i kulturę wokół mnie.", "looking.p2": "Z przyjemnością porozmawiam o możliwości dołączenia do Państwa zespołu instruktorskiego. Zapraszam do kontaktu mailowego lub przez wiadomość prywatną na Instagramie — z radością przeczytam wiadomość i odpowiem najszybciej, jak to możliwe."});
+const en={};document.querySelectorAll("[data-k]").forEach(e=>en[e.dataset.k]=e.textContent);
+function setLang(l){
+  l=["en","pl","ko"].includes(l)?l:"en";
+  const dictionary={en,pl,ko}[l];
+  document.querySelectorAll("[data-k]").forEach(e=>e.textContent=dictionary[e.dataset.k]??en[e.dataset.k]);
+  document.documentElement.lang=l;
+  document.querySelectorAll(".lang button").forEach(b=>{b.classList.toggle("on",b.dataset.lang===l);b.setAttribute("aria-pressed",String(b.dataset.lang===l))});
+  try{localStorage.setItem("portfolio-language",l)}catch{}
+}
+document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.lang));let savedLanguage="en";try{savedLanguage=localStorage.getItem("portfolio-language")||"en"}catch{}setLang(savedLanguage);
+
+
+
+document.querySelectorAll(".carousel").forEach(carousel=>{
+  const track=carousel.querySelector(".carousel-track");
+  const slides=[...carousel.querySelectorAll(".carousel-slide")];
+  const dots=[...carousel.querySelectorAll(".carousel-dot")];
+  let current=0;
+  function show(i){
+    current=(i+slides.length)%slides.length;
+    track.style.transform=`translateX(-${current*100}%)`;
+    dots.forEach((d,n)=>d.classList.toggle("active",n===current));
+  }
+  carousel.querySelector(".prev").addEventListener("click",()=>show(current-1));
+  carousel.querySelector(".next").addEventListener("click",()=>show(current+1));
+  dots.forEach((d,i)=>d.addEventListener("click",()=>show(i)));
+  let startX=null;
+  carousel.addEventListener("touchstart",e=>startX=e.touches[0].clientX,{passive:true});
+  carousel.addEventListener("touchend",e=>{
+    if(startX===null)return;
+    const dx=e.changedTouches[0].clientX-startX;
+    if(Math.abs(dx)>45) show(current+(dx<0?1:-1));
+    startX=null;
+  },{passive:true});
+});
+
+</script></body></html>
